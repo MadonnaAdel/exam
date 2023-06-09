@@ -1,0 +1,240 @@
+/*global  */
+:root{
+    --min-bg:#f7f7f7 ;
+}
+/* varibols */
+.main-heading {
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    margin: auto;
+}
+.main-heading h2::before{
+    content: "";
+    background: url(../img/dots.png);
+    display: block;
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    bottom: -19%;
+    right: 0%;
+    z-index: -1;
+}
+.container{
+    width: 72% !important;
+}
+/*landing  */
+.home{
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+.home .home-area p::after{
+    content: "I Am |";
+    position: relative;
+    animation: move 5s infinite;
+}
+@keyframes move {
+    0%{content: "I Am |";}
+    2%{content: "I Am M|";}
+    5%{content: "I Am Ma|";}
+    7%{content: "I Am Mado|";}
+    10%{content: "I Am Mado|";}
+    12%{content: "I Am Madon|";}
+    15%{content: "I Am Madonn|";}
+    17%{content: "I Am Madonna|";}
+    20%{content: "I Am Madonna A|";}
+    23%{content: "I Am Madonna Ad|";}
+    26%{content: "I Am Madonna Ade|";}
+    30%{content: "I Am Madonna Adel|";}
+    34%{content: "I Am Madonna Ade|";}
+    38%{content: "I Am Madonna Ad|";}
+    40%{content: "I Am Madonna A|";}
+    44%{content: "I Am Madonna |";}
+    48%{content: "I Am Madonn |";}
+    50%{content: "I Am Madon |";}
+    53%{content: "I Am Mado |";}
+    57%{content: "I Am Mad |";}
+    59%{content: "I Am Ma |";}
+    62%{content: "I Am M |";}
+    64%{content: "I Am |";}
+    68%{content: "I Am D |";}
+    70%{content: "I Am De |";}
+    73%{content: "I Am Dev |";}
+    76%{content: "I Am Deve |";}
+    79%{content: "I Am Devel |";}
+    82%{content: "I Am Develo |";}
+    85%{content: "I Am Develop |";}
+    87%{content: "I Am Develope |";}
+    89%{content: "I Am Developer |";}
+    90%{content: "I Am Develop |";}
+    92%{content: "I Am Develo |";}
+    95%{content: "I Am Devel |";}
+    97%{content: "I Am Deve |";}
+    98%{content: "I Am Dev |";}
+    99%{content: "I Am De |";}
+    100%{content: "I Am D |";}
+    101%{content: "I Am |";}
+}
+/* about */
+.about .about-area .first::after{
+    content: "";
+    background: url(../img/dots.png) repeat;
+    display: block;
+    height: 75%;
+    width: 75%;
+    position: relative;
+    bottom: 65%;
+    right: -4%;
+    z-index: -1;
+}
+.first .img{
+    width: 90%;
+}
+.about .progress {
+    box-shadow: 2px 4px 8px rgb(0 0 0 / 15%) inset;
+}
+.about .one:hover{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+.about .tow:hover{
+    background-color:#212529 ;
+    color: white ;
+}
+/* services */
+.servics{
+    background-color: var(--min-bg); 
+}
+.servics .card span{
+    width: 70px;
+    height: 70px;
+    margin: 15px auto;
+    background-color: var(--min-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.servics .card:hover span{
+    background-color: #212529;
+    color: #fff;
+}
+/* works */
+
+.nav-pills .nav-link.active{
+    background-color: #fff;
+    border-radius: 0%;
+    position: relative;
+
+}
+.nav-pills .nav-link.active::after{
+    width: 60%;
+}
+.nav-pills .nav-link::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: calc( 3% + 12px);
+    width: 0%;
+    height: 2px;
+    background-color: #212529;
+    transition: all 0.5s;
+}
+.nav-pills .nav-link {
+    color: #212529 !important;
+    font-weight: 700;
+    margin-inline: 7px;
+}
+.portfolio .col .img {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .col .img .laye{
+    width: calc( 100% - 10px);
+    height:calc( 100% - 10px);
+    background-color: #ffffffe1;
+    position: absolute;
+    top: 3%;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.portfolio .col .img:hover .laye{
+   top: 5px;
+   opacity: 1;
+}
+.portfolio .col .img .laye p{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.portfolio .col .laye .icon-box i{
+    width: 35px;
+    height: 35px;
+    background-color: #212529;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    transition: all 0.4s;
+}
+.portfolio .col .laye .icon-box i:hover{
+    background-color: white;
+    border: 1px solid #212529;
+    color: #212529;
+}
+/* client */
+.teastmonail{
+    background-color: var(--min-bg);
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin-inline: 10px;
+    border-radius: 50%;
+    background-color: #5a5a5acc;
+    
+}
+/* blog */
+.blog{
+    background-color: var(--min-bg);
+}
+.blog .col .card-img img{
+    transition: transform 0.5s;
+}
+.blog .col .card-img:hover img{
+ transform: scale(1.2);
+}
+/* contact */
+.contact  .col  .ic-box i{
+    width: 65px;
+    height: 65px;
+    background-color: var(--min-bg);
+    color: #212529;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    transition: all 0.7s;
+}
+.contact  .col  .ic-box i:hover{
+    background-color: #212529;
+    color: #fff;
+}
+.form-control{
+    border: none;
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 2px solid #212529;
+}
